@@ -1,6 +1,6 @@
 # Classifying Toxic comments on social networking sites
 
-Analyzing customer transaction at Starbucks to recommend and predict offers to existing and potential customers
+Analyzing toxic comments on social media to help prevent toxicity, obscenity and threats.
 
 # Table of Contents
 1. Project Motivation
@@ -12,11 +12,11 @@ Analyzing customer transaction at Starbucks to recommend and predict offers to e
 
 ## Project Motivation 
 
-Cyberbullying is a form of harassment using electronic means. With the advent of modern day technology, it is becoming increasingly common for people to interact on social platforms and inadvertently engage in cyber bullying, especially among teenagers. Harmful bullying behaviour ranges from spreading rumors, toxic comments, threats, identity hate, misinformation to hate speech.
+Cyberbullying is a form of harassment using electronic means. With the advent of modern day technology, it is becoming increasingly common for people to interact on social platforms and inadvertently engage in cyber bullying, especially among teenagers. Harmful bullying behaviour ranges from spreading rumors, toxic comments, threats, identity hate, misinformation and hate speech.
 
 Victims of cyberbulling may experience lower self-esteem, increased suicidal ideation, and a variety of negative emotional responses including being scared, frustrated, angry, or depressed. Between 20% and 40% of adolescents are victims of cyberbullying worldwide.The youth slowly change their behaviors and actions so they become more withdrawn and quiet, but this may go unnoticed since the change is subtle.
 
-The project motivation is derived from a Kaggle based [dataset] (https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) released by The Conversation AI team, a research initiative founded by Jigsaw and Google (both a part of Alphabet) who are working on tools to help improve online conversation. Based on a labelled data of toxic and non-toxic comments from Wikipedia, we plan to model our response to pre-emptively and actively to keep cyber bullying at bay.
+The project motivation is derived from a Kaggle based [dataset] (https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) released by The Conversation AI team, a research initiative founded by Jigsaw and Google (both a part of Alphabet) who are working on tools to help improve online conversation with platforms like [Perspective](https://perspectiveapi.com/#/home) . Based on a labelled dataset of toxic and non-toxic comments from Wikipedia, we plan to model our response to pre-emptively and actively keep cyber bullying at bay.
 
 Our task will be to train a model on detecting toxicity, identity hate and threat and consequently using them to actively mark and review toxic comments on social platforms.
 
