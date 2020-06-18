@@ -36,11 +36,11 @@ We look at specific words in the comments to help us identify hate and threats.
 
 IV. Data Modeling and Prediction
 
-We use a Linear SVC model to help predict which comments fall into the category of toxicity.
+We compare a NaiveBayes, a Logistic Regression and a Linear SVC model to help predict which comments fall into the category of toxicity.
 
 V. Conclusion
 
-
+Discussion on which model performs better and why.
 
 ## File Descriptions
 
@@ -50,21 +50,13 @@ train.csv
 
 test.csv
 
-test-labels.csv
-
 ### train.csv
 
-id (string) - offer id
-
+the training set, contains comments with their binary labels
 
 ### test.csv
 
-age (int) - age of the customer
-
-
-### test-labels.csv
-
-event (str) - record description (ie transaction, offer received, offer viewed, etc.)
+the test set, you must predict the toxicity probabilities for these comments. To deter hand labeling, the test set contains some comments which are not included in scoring.
 
 
 ## Running the code
@@ -77,11 +69,19 @@ Folder structure:
 
 ## Results
 
-Based on our analysis of the model 
+Based on our analysis of the model, the LinearSVC model is able to perform most efficiently in terms of training time and the ROC AUC Score. One of the reasons LinearSVC works better than Logistic Regression because LinearSVC tries to finds the “best” margin (distance between the line and the support vectors) that separates the classes and this reduces the risk of error on the data, while logistic regression does not, instead it can have different decision boundaries with different weights that are near the optimal point.
 
+SVM works well with unstructured and semi-structured data like text and images while logistic regression works with already identified independent variables. SVM is based on geometrical properties of the data while logistic regression is based on statistical approaches
 
 The main findings of the code can be found at a post available 
 
 ## Licensing, Authors, Acknowledgements
+
 Credits to [Wikipedia] (https://en.wikipedia.org/wiki/Cyberbullying)
+
 Credits to [Kaggle] (https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) for the dataset
+
+Knowledge credits:
+https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16
+
+https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
